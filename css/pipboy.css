@@ -1,0 +1,119 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: Pipboy;
+    src: url("..//fonts/monofonto.ttf");
+}
+
+body{
+    font-family: Pipboy, sans-serif;
+    color: #14fe17;
+    background-color: #272B23!important;
+}
+
+body{
+    background: repeating-linear-gradient(transparent, transparent 1px, black 2px, black 2px);
+    background-size: auto 100%;
+    background-position: center center;
+    opacity: 1;
+}
+
+a.nav-link, a.navbar-brand{
+
+    color: #14fe17!important;
+}
+
+footer{
+    display: block;
+    position: relative;
+    width: (100% - 20px);
+    margin: 0px 10px;
+    padding: 20px;    
+    background-color: rgb(16, 255, 0, 0.2);
+    font-size: 20px;
+}
+
+header{
+    text-transform: uppercase;
+}
+
+#nav-tab{
+    border-bottom: 2px solid;
+    margin: 10px 10px;
+    /* font-size: 32px;
+    line-height: 22px;
+    padding-bottom: 0px;     */
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    font-size: 32px;
+    line-height: 22px;
+    padding-bottom: 0px; 
+}
+.navbar-dark .navbar-brand{
+    font-size: 32px;
+    line-height: 22px;
+    padding-bottom: 0px; 
+}
+
+#nav-tab::before, #nav-tab::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 7px;
+    background-color: #14fe17;
+    top: auto;
+}
+#nav-tab::before{
+    left: 0px;
+    width: 2px;
+}
+
+#nav-tab::after{
+    right: 0px;
+    width: 1px;
+}
+.navbar-nav{
+    width: 100%;
+}
+.navbar-nav > ul.navbar-nav > li{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+#img_pip{
+    margin: auto;
+    display: block;
+    position: relative;
+    margin-top: auto;
+    right: 50px;
+    width: 300px;
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(2);
+}
+
+.progress{
+    border: 1px solid;
+    background-color: #272B23;
+}
+
+.progress-bar{
+    width: 80%;
+    background-color: #14fe17;
+}
+
+/* Media Queries */
+@media (max-width: 390px){
+    #img_pip{
+        right: 10px;
+        width: 200px;
+    }
+    p{
+        margin-left: 20px!important;
+    }
+}
