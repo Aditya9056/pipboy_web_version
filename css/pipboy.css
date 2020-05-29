@@ -108,6 +108,15 @@ header{
 }
 
 /* Media Queries */
+@media (max-width: 7770px){
+    #img_pip{
+        right: 10px;
+        width: 300px;
+    }
+    p{
+        margin-left: 20px!important;
+    }
+}
 @media (max-width: 390px){
     #img_pip{
         right: 10px;
